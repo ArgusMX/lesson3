@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="bg-image-stars"></div>
+  <header>
+    <div class="container">
+      <div class="header-container">
+        <nav class="header-navbar">
+          <ul class="header-navbar-list">
+            <li class="header-navbar-item-logo"><a href="../index.html"><img src="../img/logo.JPG" title="Логотип"
+                  alt="Logo" width="90"></a></li>
+            <li class="header-navbar-item"><a class="navbar-link" href="../index.html">ГЛАВНАЯ</a></li>
+            <li class="header-navbar-item"><a class="navbar-link" href="articles.html">СТАТЬИ</a></li>
+            <li class="header-navbar-item"><a class="navbar-link" href="catalog.html">КАТАЛОГ</a></li>
+            <li class="header-navbar-item"><a class="navbar-link" href="contacts.html">КОНТАКТЫ</a></li>
+            <li class="header-navbar-item"><a class="navbar-link" href="gallery.html">ГАЛЕРЕЯ</a></li>
+            <li class="header-navbar-item"><a class="navbar-link" href="page-nav.html">НАВИГАЦИЯ</a></li>
+            <li class="header-navbar-item"><a class="navbar-link" href="registration.html">РЕГИСТРАЦИЯ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Контакты</h1>
+      <div class="contacts-box">
+        <div class="contacts-adress">
+          <h2>Адрес</h2>
+          <p>г.Харьков, Полтавский шлях, 123</p>
+          <p>+38 (067) 532-29-19</p>
+          <h2>Время работы</h2>
+          <p>Пн.-Пт.: с 10:00 до 18:00</p>
+          <p>Сб.Вс. : только экстренные звонки</p>
+        </div>
+        <div class="contacts-map">
+          <h2>Точка на карте:</h2>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1282.7251486254686!2d36.18696134221529!3d49.98416661376686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a10749933b4b%3A0xe45ea7d7bdbcfbab!2z0KLQntCSICLQk9C-0LvQtNC80LDQvSDQkNGD0LTQuNGCIg!5e0!3m2!1sen!2sua!4v1633945971333!5m2!1sen!2sua"
+            width="500" height="400" style="border:0" allowfullscreen=""></iframe>
+        </div>
+      </div>
+      <div>
+        <form action="https://tests.fomenko.top/echo/index.php" method="get">
+          <h2>Обратная связь</h2>
+          <fieldset class="form-style">
+            <div class="form-group">
+              <label for="contacts-name">Имя:</label>
+              <input name="name" type="text" id="contacts-name" placeholder="Введите имя" required size="40">
+            </div>
+            <div class="form-group">
+              <label for="contacts-phone">Телефон:</label>
+              <input name="phone" type="tel" id="contacts-phone" pattern="+380-[0-9]{2}-[0-9]{2}-[0-9]{3}-[0-9]{2}"
+                placeholder="+380-XX-XXX-XX-XX" size="40">
+            </div>
+            <div class="form-group">
+              <label for="contacts-email">E-mail:</label>
+              <input name="email" type="email" id="contacts-email" placeholder="e-mail" size="40">
+            </div>
+            <div class="form-group">
+              <label for="contacts-question">Вопрос:</label>
+              <textarea name="question" cols="42" rows="8" id="contacts-question" placeholder="Задайте нам свой вопрос"
+                required></textarea>
+            </div>
+            <div class="form-buttons">
+              <button type="submit">Отправить</button>
+              <button type="reset">Стереть</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="container">&#169;Falcon Studio, Ukraine 🇺🇦</div>
+  </footer>
+</body>
+
+</html>

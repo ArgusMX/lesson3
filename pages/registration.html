@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap" rel="stylesheet">
+  <link href="../css/styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="bg-image-stars"></div>
+  <header>
+    <div class="container">
+      <div class="header-container">
+        <nav class="header-navbar">
+          <ul class="header-navbar-list">
+            <li class="header-navbar-item-logo"><a href="../index.html"><img src="../img/logo.JPG" title="Логотип"
+                  alt="Logo" width="90"></a></li>
+            <li class="header-navbar-item"><a class="navbar-link" href="../index.html">ГЛАВНАЯ</a></li>
+            <li class="header-navbar-item"><a class="navbar-link" href="articles.html">СТАТЬИ</a></li>
+            <li class="header-navbar-item"><a class="navbar-link" href="catalog.html">КАТАЛОГ</a></li>
+            <li class="header-navbar-item"><a class="navbar-link" href="contacts.html">КОНТАКТЫ</a></li>
+            <li class="header-navbar-item"><a class="navbar-link" href="gallery.html">ГАЛЕРЕЯ</a></li>
+            <li class="header-navbar-item"><a class="navbar-link" href="page-nav.html">НАВИГАЦИЯ</a></li>
+            <li class="header-navbar-item"><a class="navbar-link" href="registration.html">РЕГИСТРАЦИЯ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <h1>Регистрация</h1>
+      <form action="https://tests.fomenko.top/echo/index.php" method="get">
+        <h2>Зарегистрируйтесь</h2>
+        <fieldset class="form-style">
+          <div class="form-group">
+            <label for="registration-family">Фамилия:</label>
+            <input name="family" type="text" id="registration-family" placeholder="Фамилия" required size="40">
+          </div>
+          <div class="form-group">
+            <label for="registration-name">Имя:</label>
+            <input name="name" type="text" id="registration-name" placeholder="Имя" required size="40">
+          </div>
+          <div class="form-group">
+            <label for="registration-second-name">Отчество:</label>
+            <input name="second-name" type="text" id="registration-second-name" placeholder="Отчество" required
+              size="40">
+          </div>
+          <div class="form-group">
+            <label for="registration-birth-date">Дата рождения:</label>
+            <input name="birth-date" type="date" id="registration-birth-date" required>
+          </div>
+          <div class="form-group">
+            <label for="registration-password">Пароль:</label>
+            <input name="password" type="password" id="registration-password" placeholder="Пароль" required size="40">
+          </div>
+          <div class="form-group">
+            <label for="registration-email">E-mail:</label>
+            <input name="email" type="email" id="registration-email" placeholder="e-mail" size="40">
+          </div>
+          <div class="form-group">
+            <label for="registration-photo">Добавить фото:</label>
+            <input name="file" type="file" id="registration-photo">
+          </div>
+          <div class="form-group">
+            <label for="registration-url">Адрес сайта:</label>
+            <input name="url" type="url" id="registration-url" value="http://mysite.name" size="40">
+          </div>
+          <div class="form-group">
+            <div class="label-form">Пол:</div>
+          </div>
+          <div class="form-group-sm">
+            <input type="radio" name="sex" id="man" value="man" required>
+            <label for="man">мужчина</label>
+          </div>
+          <div class="form-group-sm">
+            <input type="radio" name="sex" id="woman" value="woman">
+            <label for="woman">женщина</label>
+          </div>
+          <div class="form-group">
+            <div class="label-form">Какую кухню предпочитаете:</div>
+          </div>
+          <div class="form-group-sm">
+            <input type="checkbox" name="kitchen1" id="ua" value="ukranian" checked>
+            <label for="ua">Украинская</label>
+          </div>
+          <div class="form-group-sm">
+            <input type="checkbox" name="kitchen2" id="it" value="italian">
+            <label for="it">Итальянская</label>
+          </div>
+          <div class="form-group-sm">
+            <input type="checkbox" name="kitchen3" id="gr" value="georgian">
+            <label for="gr">Грузинская</label>
+          </div>
+          <div class="form-group-sm">
+            <input type="checkbox" name="kitchen4" id="isr" value="israilian">
+            <label for="isr">Еврейская</label>
+          </div>
+          <div class="form-group-sm">
+            <input type="checkbox" name="kitchen5" id="turk" value="turkish">
+            <label for="turk">Турецкая</label>
+          </div>
+          <div class="form-group-sm">
+            <input type="checkbox" name="kitchen6" id="jap" value="japanian">
+            <label for="jap">Японская</label>
+          </div>
+          <div class="form-group">
+            <label for="registration-question">Пару слов о себе:</label>
+            <textarea name="question" cols="39" rows="8" id="registration-question"
+              placeholder="Расскажите немного о себе"></textarea>
+          </div>
+          <div class="form-buttons">
+            <button type="submit">Зарегистрироваться</button>
+            <button type="reset">Стереть</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <div class="container">&#169;Falcon Studio, Ukraine 🇺🇦</div>
+  </footer>
+</body>
+
+</html>
